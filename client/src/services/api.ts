@@ -3,10 +3,10 @@ import axios from "axios";
 // Correct uploads folder URL
 export const storage =
   (import.meta.env.VITE_API_URL?.replace("/api", "") ||
-    "http://localhost:4000") + "/uploads";
+    "https://admindashboardmongodb.netlify.app/") + "/uploads";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:4000/api",
+  baseURL: import.meta.env.VITE_API_URL || "https://admindashboardmongodb.netlify.app/api",
   withCredentials: true,
   
 });

@@ -18,7 +18,7 @@ app.use("/uploads", express.static("./uploads"));
 // CORS configuration
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://admindashboardmongodb.netlify.app/",
     credentials: true,
   })
 );
